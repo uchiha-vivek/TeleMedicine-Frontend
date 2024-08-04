@@ -18,7 +18,9 @@ const CardContainer = () => {
   const cardsData = [
     { name: 'John Doe', info: 'Software Engineer at XYZ', linkedin: 'https://linkedin.com', twitter: 'https://twitter.com' },
     { name: 'Jane Smith', info: 'Product Manager at ABC', linkedin: 'https://linkedin.com', twitter: 'https://twitter.com' },
-    // Add more cards as needed
+    { name: 'Jane Smith', info: 'Product Manager at ABC', linkedin: 'https://linkedin.com', twitter: 'https://twitter.com' },
+    { name: 'Jane Smith', info: 'Product Manager at ABC', linkedin: 'https://linkedin.com', twitter: 'https://twitter.com' },
+     
   ];
 
   return (

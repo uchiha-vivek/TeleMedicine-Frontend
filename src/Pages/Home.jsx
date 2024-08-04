@@ -1,11 +1,12 @@
-// src/pages/Home.jsx
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CardContainer from "../components/CardContainer";
 import { ToastContainer } from "react-toastify";
 import Accordion from "../components/Accordion";
+import { Link } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css'; // Ensure CSS is imported
+import TestCard from "../components/TestCard";
 
 const accordionItems = [
   { title: "What is mental stress?", content: "Mental stress refers to the feeling of being overwhelmed, anxious, or unable to cope due to mental or emotional pressure." },
@@ -20,9 +21,16 @@ function Home() {
       <main className="flex-grow flex flex-col items-center justify-center bg-gray-100">
         <h1 className="text-3xl font-bold mb-8">Meet Our Team</h1>
         <CardContainer />
-        <div className="mt-8 w-full max-w-lg">
+        <div className="mt-8 w-full max-w-lg flex justify-center">
           {/* <Accordion items={accordionItems} /> */}
+          <Link to='/blog'>
+            <button className="px-4 py-2 text-white bg-black rounded">
+              Centered Button
+            </button>
+          </Link>
+          
         </div>
+        <TestCard/>
       </main>
       <Footer />
       <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
