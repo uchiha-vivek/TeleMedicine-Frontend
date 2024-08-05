@@ -22,8 +22,8 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link to='/blog' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
               <Link to='/faq' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">FAQ</Link>
-              <Link to='/profile' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Profile</Link>
-              <Link to='/activities' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Activity</Link>
+              {/* <Link to='/profile' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Profile</Link>
+              <Link to='/activities' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Activity</Link> */}
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">

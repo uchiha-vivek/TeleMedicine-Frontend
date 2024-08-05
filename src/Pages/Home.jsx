@@ -25,7 +25,7 @@ function Home() {
           {/* <Accordion items={accordionItems} /> */}
           <Link to='/blog'>
             <button className="px-4 py-2 text-white bg-black rounded">
-              Centered Button
+              Explore Blogs !
             </button>
           </Link>
           
