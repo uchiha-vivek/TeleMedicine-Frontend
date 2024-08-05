@@ -12,9 +12,16 @@ function LandingPage() {
                 </h1>
                 <Link to='/home'>
                 <button className="px-4 py-2 text-white bg-black rounded">
-                    Centered Button
+                    Explore More !
                 </button>
                 </Link>
+                
+                <Link to='/survey' >
+                <button className="bg-black rounded mt-64 text-white px-4 py-2">
+                    Join the Survey !
+                </button>
+                </Link>
+                
                  
             </div>
         </>

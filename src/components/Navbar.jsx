@@ -1,6 +1,6 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,15 +15,15 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold">Logo</h1>
+              {/* <h1 className="text-2xl font-bold">Logo</h1> */}
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <a href="#" className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="#" className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-                <a href="#" className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="#" className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-              </div>
+          </div>
+          <div className="hidden md:flex justify-center flex-grow">
+            <div className="ml-10 flex items-baseline space-x-4">
+              <Link to='/blog' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Blog</Link>
+              <Link to='/faq' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">FAQ</Link>
+              <Link to='/profile' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Profile</Link>
+              <Link to='/activities' className="hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Activity</Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -41,10 +41,10 @@ const Navbar = () => {
 
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="#" className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Home</a>
-          <a href="#" className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">About</a>
-          <a href="#" className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-          <a href="#" className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+          <Link to='/blog' className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Blog</Link>
+          <Link to='/faq' className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">FAQ</Link>
+          {/* <Link to='/profile' className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Profile</Link>
+          <Link to='/activities' className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Activity</Link> */}
         </div>
       </div>
     </nav>

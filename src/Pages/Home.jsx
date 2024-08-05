@@ -19,7 +19,7 @@ function Home() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center bg-gray-100">
-        <h1 className="text-3xl font-bold mb-8">Meet Our Team</h1>
+        <h1 className="text-3xl font-bold mb-8 mt-5">Meet Our Team</h1>
         <CardContainer />
         <div className="mt-8 w-full max-w-lg flex justify-center">
           {/* <Accordion items={accordionItems} /> */}
